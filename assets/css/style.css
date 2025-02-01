@@ -79,6 +79,7 @@
     text-align: left;
     color: #FFFFFF;
     text-decoration: none;
+    opacity: 90%;
 }
 
 .links:hover {
@@ -146,6 +147,13 @@
 
 
 }
+.women {
+    height: 760px;
+}
+.form-button{
+    max-width: 476px;
+    
+}
 
 .z-1 {
     z-index: -1;
@@ -160,7 +168,7 @@ label[for="text"] {
 
 .compare-button {
     position: absolute;
-    right: 140px;
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
@@ -434,10 +442,6 @@ input[type="text"] {
 
     .para {
         padding-right: 0;
-    }
-
-    .compare-button {
-        right: 30px;
     }
 
     .center {
