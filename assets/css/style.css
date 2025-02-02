@@ -1,5 +1,3 @@
-@import url(' https://fonts.cdnfonts.com/css/helvetica-neue-5 ');
-
 .bg-img {
     background-image: url(/assets/images/bg-img.png);
     background-position: center;
@@ -9,6 +7,7 @@
     right: 0;
     width: 100%;
     height: 810px;
+    border-radius:0px 0px 0px 200px;
 }
 
 .gap-40 {
@@ -23,7 +22,9 @@
     margin-top: 70px;
 }
 
-
+.ml-60{
+    margin-left: 60px;
+}
 
 .m-p {
     margin: 0;
@@ -101,10 +102,13 @@
     text-align: left;
     color: #FFFFFF;
     padding-top: 10px;
-    padding-right: 50px;
     text-decoration: none;
+    opacity: 90%;
 }
 
+.max-w-506 {
+    max-width: 506px;
+}
 
 .para-1 {
     font-family: Helvetica;
@@ -113,7 +117,6 @@
     line-height: 18.4px;
     text-align: center;
     color: #FFFFFF;
-    padding-top: 10px;
     text-decoration: none;
     opacity: 70%;
 }
@@ -137,12 +140,14 @@
 
 
 }
+
 .women {
-    height: 760px;
+    height: 790px;
 }
-.form-button{
+
+.form-button {
     max-width: 476px;
-    
+
 }
 
 label[for="text"] {
@@ -150,7 +155,7 @@ label[for="text"] {
     display: flex;
     align-items: center;
     margin-top: 30px;
-   
+
 }
 
 .compare-button {
@@ -167,10 +172,13 @@ label[for="text"] {
     color: White;
     border: 1px solid rgba(0, 168, 232, 1);
     padding: 12px 20px 12px 20px;
-    border-radius: 0px 50px 50px 20px;
+    /* border-radius: 0px 50px 50px 20px; */
+    border-radius: 0px 50px 50px 50px;
 
 }
-
+.compare-button:hover{
+background-color:#007EA7;
+}
 input[type="text"] {
     font-family: Helvetica;
     font-size: 16px;
@@ -178,8 +186,8 @@ input[type="text"] {
     line-height: 17.6px;
     width: 476px;
     padding: 24px 22px;
-    border-radius: 0px 100px 100px 20px;
-    border: 1px solid rgba(254, 254, 254, 1);
+    border-radius: 0px 100px 100px 90px;
+    border: 1px solid #00000033;
 }
 
 ::placeholder {
@@ -252,15 +260,18 @@ input[type="text"] {
     text-align: left;
     color: #FFFFFF;
     text-decoration: none;
-   
+
 
 }
-.pl-20{
-    padding-left: 20px;
+
+.pl-30 {
+    padding-left: 30px;
 }
-.pr-30{
+
+.pr-30 {
     padding-right: 30px;
 }
+
 .max-w-171 {
     max-width: 171px;
 }
@@ -287,29 +298,29 @@ input[type="text"] {
 .info {
     box-sizing: border-box;
     gap: 10px;
-    transform: translateY(140px);
+    transform: translateY(160px);
     background-image: url(/assets/images/svg/box.svg);
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-
 }
-.hover:hover{
+
+.hover:hover {
     transform: scale(1.3);
     cursor: pointer;
 }
+
 .max-w-620 {
     max-width: 620px;
 }
 
-.mb-40 {
-    margin-bottom: 40px;
+.mb-60 {
+    margin-bottom: 60px;
 }
 
-.pt-160 {
-    padding-top: 160px;
+.pt-270 {
+    padding-top: 270px;
 }
 
 .pt-90 {
@@ -329,7 +340,26 @@ input[type="text"] {
 .btn-2 {
     background-color: #007EA7;
 }
+.btn-2,.btn:hover{
+    background-color:  rgba(0, 168, 232, 1);;
+}
+.slick-prev{
+    display: none
+}
+.slick-next{
+    display: none;
+    right:0
+}
+.ml-80{
+    margin-left: 80px;
+}
 
+@media(max-width:1248px) {
+    .ml-60 {
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+}
 @media(max-width:1199.98px) {
     .ml-190 {
         margin-left: 50px;
@@ -416,6 +446,13 @@ input[type="text"] {
     .heading-2 {
         font-size: 32px;
     }
+        .ml-60 {
+    
+            margin-top: 100px;
+        }
+                .ml-80 {
+                    margin-left: 60px;
+                }
 }
 
 @media(max-width:767.98px) {
@@ -443,6 +480,13 @@ input[type="text"] {
     .mt-30 {
         margin-top: 30px;
     }
+         .ml-60 {
+    
+             margin-top: 120px;
+         }
+                   .ml-80 {
+                       margin-left: 40px;
+                   }
 }
 
 @media(max-width:575.98px) {
@@ -461,6 +505,9 @@ input[type="text"] {
     .pt-120 {
         padding-top: 150px;
     }
+         .ml-80 {
+             margin-left: 10px;
+         }
 }
 
 @media(max-width:320px) {
@@ -471,5 +518,9 @@ input[type="text"] {
     .ml-180 {
         margin-left: 80px;
     }
-
+          .ml-60 {
+    
+              margin-top: 150px;
+          }
+ 
 }
